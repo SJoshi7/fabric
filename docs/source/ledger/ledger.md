@@ -75,7 +75,7 @@ Fabric provides flexibility in this regard. The world state can change
 frequently, as states can be created, updated and deleted.
 
 Secondly, there's a **blockchain** -- a transaction log that records all the
-changes that have resulted in the current the world state. Transactions are
+changes that have resulted in the current world state. Transactions are
 collected inside blocks that are appended to the blockchain -- enabling you to
 understand the history of changes that have resulted in the current world state.
 The blockchain data structure is very different to the world state because once
@@ -166,7 +166,7 @@ what's important is that block sequencing, as well as transaction sequencing
 within blocks, is established when blocks are first created by a Hyperledger
 Fabric component called the **ordering service**.
 
-Each block's header includes a hash of the block's transactions, as well a copy
+Each block's header includes a hash of the block's transactions, as well as a copy
 of the hash of the prior block's header. In this way, all transactions on the
 ledger are sequenced and cryptographically linked together. This hashing and
 linking makes the ledger data very secure. Even if one node hosting the ledger
